@@ -1,0 +1,4 @@
+#!/bin/bash
+source ~/.bashrc
+unity-setting-daemon &
+i3
