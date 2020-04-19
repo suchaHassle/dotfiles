@@ -1,0 +1,98 @@
+# 0 is too far from ` ;)
+set -g base-index 1
+
+# Automatically set window title
+set-window-option -g automatic-rename on
+set-option -g set-titles on
+
+# Rebind prefix key to Alt-b
+unbind C-b
+set-option -g prefix M-b
+bind-key C-b send prefix
+
+set -g default-terminal screen-256color
+set -g status-keys vi
+set -g history-limit 10000
+
+set -g mouse on
+
+bind-key v split-window -h
+bind-key s split-window -v
+bind-key | split-window -h
+bind-key - split-window -v
+
+bind-key < swap-pane -U
+bind-key > swap-pane -D
+
+bind-key J resize-pane -D
+bind-key K resize-pane -U
+bind-key H resize-pane -L
+bind-key L resize-pane -R
+
+# Vim style pane selection
+bind h select-pane -L
+bind j select-pane -D 
+bind k select-pane -U
+bind l select-pane -R
+
+# Use Alt-vim keys without prefix key to switch panes
+bind -n M-h select-pane -L
+bind -n M-j select-pane -D 
+bind -n M-k select-pane -U
+bind -n M-l select-pane -R
+
+# Use Alt-arrow keys without prefix key to switch panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
+
+# No delay for escape key press
+set -sg escape-time 0
+
+# Reload tmux config
+bind r source-file ~/.tmux.conf
+
+# Panes
+set -g pane-border-style fg=colour237
+set -g pane-active-border-style fg=colour231
+
+# Status bar
+set-option -g visual-activity off
+set-option -g visual-bell off
+set-option -g visual-silence off
+set-window-option -g monitor-activity off
+
+set -g status-position bottom
+set -g status-justify left
+set -g status-bg colour236
+set -g status-fg colour231
+set -g status-style dim
+set -g status-left ''
+set -g status-right '#[fg=colour231,bg=colour240,bold] %d/%m #[fg=colour232,bg=colour245,bold] %H:%M:%S '
+set -g status-right-length 50
+set -g status-left-length 20
+
+setw -g window-status-current-style fg=colour238
+setw -g window-status-current-style bg=colour255
+setw -g window-status-current-style bold
+setw -g window-status-current-format ' #I#[fg=colour233]:#[fg=colour238]#W#[fg=colour243]#F '
+
+setw -g window-status-style fg=colour253
+setw -g window-status-style bg=colour232
+setw -g window-status-style none
+setw -g window-status-format ' #I#[fg=colour253]:#[fg=colour253]#W#[fg=colour253]#F '
+
+setw -g window-status-bell-style bold
+setw -g window-status-bell-style fg=colour255
+setw -g window-status-bell-style bg=colour0
+
+# Messages
+set -g message-style bold
+set -g message-style fg=colour255
+set -g message-style bg=colour236
+
