@@ -477,7 +477,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>222 266 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 719 1792 378 0 0 1792 1097 </string>
+	<string>0 430 1109 655 0 0 1792 1120 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 366 1109 655 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -682,6 +682,8 @@
 				<key>Red Component</key>
 				<real>0.718147873878479</real>
 			</dict>
+			<key>Brighten Bold Text</key>
+			<true/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -1119,7 +1121,7 @@
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -1333,6 +1335,8 @@
 				<key>Red Component</key>
 				<real>0.718147873878479</real>
 			</dict>
+			<key>Brighten Bold Text</key>
+			<true/>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -1791,7 +1795,7 @@
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -1828,6 +1832,10 @@
 	<string>B7E54C0E-A590-4109-9EFF-BD78BD053C02</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>4</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>608946616.60703099</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
