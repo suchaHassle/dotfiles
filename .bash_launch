@@ -1,0 +1,7 @@
+. ~/.scripts/keybindings.bash
+source ~/.scripts/git-prompt.sh
+
+eval "$(ssh-agent -s)" > /dev/null
+ssh-add ~/.ssh/github > /dev/null 2> /dev/null
+
+neofetch
