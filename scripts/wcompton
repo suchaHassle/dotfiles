@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+pkill compton
+sh compton --paint-on-overlay --config ~/.config/compton.conf

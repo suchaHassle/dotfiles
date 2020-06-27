@@ -1,3 +1,4 @@
 #!/bin/bash
 pkill polybar
-polybar i3bar
+polybar --reload i3bar-main &
+polybar --reload i3bar-secondary &

@@ -3,7 +3,7 @@ allow_bold = true
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = SFMono 16
+font = SFMono 12
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
@@ -12,13 +12,14 @@ font = SFMono 16
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"
-scrollback_lines = 10000
+scrollback_lines = -1
 #search_wrap = true
 #urgent_on_bell = true
 #hyperlinks = false
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-#browser = xdg-open
+# browser = xdg-open
+browser = google-chrome
 
 # "system", "on" or "off"
 cursor_blink = system
@@ -49,9 +50,10 @@ cursor_blink = system
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = rgba(0, 0, 0, 0.9)
+background = rgba(0, 0, 0, 0.75)
 
 [colors]
+# background = #1c1b1a
 
 # special
 foreground      = #ffffff
